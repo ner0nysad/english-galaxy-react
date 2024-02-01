@@ -1,0 +1,112 @@
+.settings__content {
+  padding: 30px 80px 0 80px;
+  flex: 1 0 auto;
+}
+.settings__title {
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+  color: white;
+}
+.settings__levels {
+  display: flex;
+  justify-content: space-between;
+}
+.settings__level {
+  font-size: 26px;
+  color: white;
+}
+.settings__point {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+.settings__text {
+  margin: 0 30px 0 40px;
+  color: #dceefa;
+  font-size: 22px;
+}
+.settings__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.settings__switch input {
+  display: none;
+}
+.settings__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.settings__slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .settings__slider {
+  background-color: #2196f3;
+}
+input:focus + .settings__slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .settings__slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.settings__slider {
+  border-radius: 34px;
+}
+.settings__slider:before {
+  border-radius: 50%;
+}
+.settings__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .settings__content {
+    padding: 30px 30px 0 30px;
+    font-size: 18px;
+  }
+  .settings__point {
+    margin: 0 0 35px 0;
+  }
+  .settings__text {
+    text-align: start;
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    padding: 5px 0 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .settings__title {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 30px 0;
+  }
+  .settings__point {
+    margin: 0 0 20px 0;
+  }
+  .settings__text {
+    max-width: 150px;
+    font-size: 20px;
+  }
+}

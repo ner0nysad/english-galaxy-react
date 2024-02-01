@@ -1,0 +1,26 @@
+.header {
+  background-color: #00a6fb;
+  border-radius: 15px 15px 0 0;
+  padding: 10px 0 10px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.header-list {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+}
+.header-list li {
+  list-style-type: none;
+}
+.header-button {
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 20px;
+}

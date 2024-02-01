@@ -1,0 +1,81 @@
+.words__container {
+  position: relative;
+  padding: 100px 0 0 0;
+}
+.words__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.words__content-title {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+.words__content-word {
+  background-color: #ffffff;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 0 40px 0;
+  line-height: 20px;
+}
+.words__content-answers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.words__content-list {
+  margin: 20px 50px 0 0;
+}
+.words__content-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: #fff;
+  transition: 0.15s ease;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+.words__content-answers-right {
+  margin: 0;
+  padding: 0;
+}
+.words__item {
+  list-style-type: none;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100px;
+  max-width: 600px;
+  user-select: none;
+}
+
+.word-listen {
+  margin: 0 0 40px 0;
+  border: 1px solid #69a9f8;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: url(../images/sound.png) 0 0 / cover #69a9f8;
+}
+
+fieldset {
+  border: none;
+}

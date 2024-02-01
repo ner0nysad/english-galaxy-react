@@ -1,0 +1,13 @@
+.categories__card {
+  margin: 0 0 20px 0;
+}
+.categories__link {
+  text-align: center;
+  background-color: rgb(246, 252, 253);
+  font-weight: 600;
+  width: 300px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px 50px;
+}

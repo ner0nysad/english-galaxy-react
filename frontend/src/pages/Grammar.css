@@ -1,0 +1,63 @@
+.grammar__container {
+  position: relative;
+  padding: 100px 0 0 0;
+}
+.grammar__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grammar__info-text {
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 0 0 40px 0;
+  line-height: 20px;
+}
+.grammar__info-example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grammar__check {
+  width: 240px;
+  padding: 10px 30px;
+  color: white;
+  background-color: #69a9f8;
+  border: 1px solid #69a9f8;
+  border-radius: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 120px);
+  text-decoration: none;
+  text-align: center;
+}
+.orange,
+.yellow,
+.green,
+.blue {
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: #15adfa;
+}
+.green {
+  background-color: greenyellow;
+  margin: 0;
+}
+.plus {
+  margin: 0 10px 0 0;
+  color: white;
+  font-size: 20px;
+}

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+:root {
+  --color-blue: #00a6fb;
+  --color-black: #000000;
+  --color-1: #69a9f8;
+  --color-2: #15adfa;
+  --color-3: #99a2bb;
+  --color-4: #5da3f8;
+  --color-5: #69a9f8;
+}
+::selection {
+  color: #dceefa;
+  background-color: #5da3f8;
+}
+
+/* исчезающий placeholder */
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+/* общие стили */
+body {
+  background-color: #dceefa;
+  font-family: "Open Sans", sans-serif;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  caret-color: #15adfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container::-webkit-scrollbar {
+  width: 0;
+}
+
+.container {
+  max-width: 800px;
+  height: 900px;
+  margin: 50px auto 0;
+  background: url(./images/cosmo.jpg) 0 0 / cover no-repeat;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}

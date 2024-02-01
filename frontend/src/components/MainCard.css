@@ -1,0 +1,33 @@
+.main__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 0 0 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+}
+.main__card:last-child {
+  margin: 0;
+}
+.main__card-content {
+  font-size: 16px;
+  max-width: 300px;
+  margin: 0 25px 0 25px;
+}
+.main__card-link button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #15adfa;
+  border: 5px solid #7fb7fa;
+}
+@media (max-width: 480px) {
+  .main__card {
+    width: 100%;
+  }
+  .main__card-content {
+    margin: 0 15px 0 15px;
+  }
+}

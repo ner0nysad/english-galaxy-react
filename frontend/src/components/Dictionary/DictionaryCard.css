@@ -1,0 +1,132 @@
+.dictionary__card {
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: rgb(246, 252, 253);
+  width: 100%;
+  width: 400px;
+  margin: 0 0 20px 0;
+}
+.dictionary__card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dictionary__card-favorite {
+  position: relative;
+  display: flex;
+}
+.dictionary__card-favorite input {
+  width: 50px;
+  height: 50px;
+  margin: 0 40px 0 0;
+}
+.dictionary__card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dictionary__card-right-button {
+  background-color: #a0cafd;
+  border: 1px solid #a0cafd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px 0 0;
+}
+.dictionary__card-right-more {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: none;
+  background: transparent;
+}
+.dictionary__card-right-more:after {
+  position: absolute;
+  z-index: 5;
+  content: "";
+  height: 5px;
+  width: 20px;
+  background-color: #a0cafd;
+  top: 17px;
+  left: 5px;
+}
+.dictionary__card-right-more:before {
+  position: absolute;
+  z-index: 5;
+  content: "";
+  height: 5px;
+  width: 20px;
+  background-color: #a0cafd;
+  top: 16px;
+  left: 17px;
+}
+.dictionary__card-right-more:after {
+  transform: rotate(45deg);
+}
+.dictionary__card-right-more:before {
+  transform: rotate(-45deg);
+}
+.dictionary__card-word {
+  font-size: 26px;
+  margin: 0 60px 0 0;
+}
+.dictionary__card-favorite > input {
+  display: none;
+}
+.dictionary__card-favorite > label {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: 0.3s;
+}
+.dictionary__card-favorite > input:checked ~ label,
+.dictionary__card-favorite > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+.dictionary__card-favorite > input:not(:checked) ~ label:hover,
+.dictionary__card-favorite > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+.dictionary__card-right-button img {
+  height: 30px;
+  width: 30px;
+}
+.dictionary__card-delete {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+.dictionary__card-delete:before,
+.dictionary__card-delete:after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  height: 5px;
+  width: 30px;
+  background-color: red;
+}
+.dictionary__card-delete:before {
+  transform: rotate(45deg);
+}
+.dictionary__card-delete:after {
+  transform: rotate(-45deg);
+}
+.dictionary__card-delete > input {
+  display: none;
+}
+.dictionary__card-overlay-hide {
+  display: none;
+}
+.dictionary__card-overlay {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.dictionary__card-translate {
+  margin: 0 0 10px 0;
+}
